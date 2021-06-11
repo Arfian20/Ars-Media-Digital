@@ -82,23 +82,24 @@ header h1 {
 @media (max-width: 1200px) {
   container {
     position: relative;
-    width: calc(100% - 20px);
+    width: calc(100% - 25px);
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 800px) {
   .section {
     padding: 50px 10px 10px;
   }
   .container {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 10px;
+    width: 140%;
   }
   .container .content {
     transform: translateX(0px);
-    max-width: 100%;
+    max-width: 150%;
     padding: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   header {
     position: relative;
@@ -110,19 +111,24 @@ header h1 {
     right: 0;
   }
   header h1 {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    flex-direction: column;
+    margin-top: -8px;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
   }
-
+  header ul li {
+    margin: 2px;
+  }
+  header ul li a {
+    display: inline-block;
+  }
   .footer {
     bottom: -50px;
+    max-width: 100%;
   }
   imgBox img {
     transform: translateX(30px);
-    max-width: 60%;
+    max-width: 110%;
     padding: 30px;
     margin-top: -40px;
     margin: auto;
@@ -131,7 +137,7 @@ header h1 {
   @keyframes animate {
     0%,
     100% {
-      transform: translateY(30px);
+      transform: translateY(20px);
     }
     50% {
       transform: translateY(10%);

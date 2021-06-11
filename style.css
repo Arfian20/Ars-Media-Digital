@@ -137,21 +137,22 @@ header ul li a.active {
 @media (max-width: 1200px) {
   container {
     position: relative;
-    width: calc(100% - 20px);
+    width: calc(100% - 60px);
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 800px) {
   .section {
-    padding: 50px 10px 10px;
+    padding: 50px 20px 20px;
   }
   .container {
     flex-direction: column;
     height: auto;
-    padding: 20px;
+    padding: 10px;
+    width: 134%;
   }
   .container .content {
     transform: translateX(0px);
-    max-width: 100%;
+    max-width: 150%;
     padding: 30px;
     margin-top: 20px;
   }
@@ -177,10 +178,11 @@ header ul li a.active {
   }
   .footer {
     bottom: -50px;
+    max-width: 100%;
   }
   imgBox img {
     transform: translateX(30px);
-    max-width: 60%;
+    max-width: 110%;
     padding: 30px;
     margin-top: -40px;
     margin: auto;
